@@ -4,16 +4,17 @@
 // The sequence looks as follows: 1 1 2 3 5 8 13.
 
 function fib(n) {
-if (n < 2) {
-return 1;
+if (n ===0) {
+return 0;
 }
 
 if (n===1) {
 return 1;
 }
-let fibnac  = fib(n-1) + fib(n-2)
-console.log(fibnac)
+let fibnac  = fib(n-2) + fib(n-1)
 return fibnac;
 }
 
-fib(7);
+for (let i = 0; i < 12; i++) {
+  console.log(fib(i));
+}
